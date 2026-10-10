@@ -121,8 +121,3 @@ Qolgan barcha jarayonlarni (URL kiritish, Threads soni va natija fayli) dasturni
 Ushbu vosita faqat **resurslarni test qilish, kiberxavfsizlik auditlari va ta'lim** maqsadida yaratilgan. Ruxsat berilmagan begona serverlarda ushbu vosita orqali fuzzing amalga oshirish noqonuniy hisoblanadi. Foydalanish qoidalari buzilgan taqdirda muallif javobgarlikni o'z zimmasiga olmaydi.
 
 ---
-
-## 🧑‍💻 Loyiha Ijodkori
-
-*   **Sizning Ismingiz** - [@SizningTelegramingiz](https://t.me)
-*   GitHub: [@SizningGitHubingiz](https://github.com)
