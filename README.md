@@ -59,15 +59,15 @@ Go yadrosi yuklangach, terminal tozalanadi va har bir yadro holati hamda jonli p
 
 ```text
 ┌───[ TARMOQ PARAMETRLARI ]
-│ Nishon URL  => https://target-site.com
+│ Nishon URL  => https://target-site.com/
 │ Lug'atda    => 220551 ta maxfiy yo'l
 │ Tarmoqlar   => 100 concurrent workers
 │ CPU Aktiv   => 7/8 Yadrolar
 └───[ CRACKING IN PROGRESS... ]
 
-[SUCCESS-200] ───> https://target-site.comadmin
-[REDIRECT-301] ───> https://target-site.comimages
-[FORBIDDEN-403] ───> https://target-site.com.htaccess
+[SUCCESS-200] ───> https://target-site.com/admin
+[REDIRECT-301] ───> https://target-site.com/images
+[FORBIDDEN-403] ───> https://target-site.com/.htaccess
 
 [◢] [████████░░░░░░░░░░░░] 42.15% (92962/220551)
 ```
@@ -99,7 +99,7 @@ sudo apt install golang -y
 ### 2. Loyihani sozlash:
 Loyihangiz papkasiga o'ting va fayllar joylashuvini tekshiring (`main.go` va `fuzzer.sh` bitta papkada bo'lishi kerak):
 ```bash
-git clone https://github.com
+git clone https://github.com/USERNAME/LOYIHA-NOMI.git
 cd LOYIHA-NOMI
 chmod +x fuzzer.sh
 ```
@@ -116,8 +116,27 @@ Qolgan barcha jarayonlarni (URL kiritish, Threads soni va natija fayli) dasturni
 
 ---
 
+## 🛠️ Mualliflik va Loglarni Filtrlash (Advanced Usage)
+
+Natijalarni terminalning o'zida tezkor tahlil qilish va filtrlash uchun quyidagi Linux quvurlaridan (pipelines) foydalanishingiz mumkin:
+
+```bash
+# Faqat 200 OK (Muvaffaqiyatli) yo'llarni ko'rish
+grep "SUCCESS-200" scan_results.txt
+
+# Taqiqlangan (403 Forbidden) kataloglarni ajratib olish
+grep "FORBIDDEN-403" scan_results.txt
+```
+
+---
+
 ## ⚠️ OGOHLANTIRISH (DISCLAIMER)
 
 Ushbu vosita faqat **resurslarni test qilish, kiberxavfsizlik auditlari va ta'lim** maqsadida yaratilgan. Ruxsat berilmagan begona serverlarda ushbu vosita orqali fuzzing amalga oshirish noqonuniy hisoblanadi. Foydalanish qoidalari buzilgan taqdirda muallif javobgarlikni o'z zimmasiga olmaydi.
 
 ---
+
+## 🧑‍💻 Loyiha Ijodkori
+
+*   **Sizning Ismingiz** - [@SizningTelegramingiz](https://t.me/username)
+*   GitHub: [@SizningGitHubingiz](https://github.com/username)
